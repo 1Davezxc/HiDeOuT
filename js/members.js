@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             name: "Rudeboy",
             role: "officer",
-            roleDisplay: "Officer",
+            roleDisplay: "Coach",
             image: "images/rude.jpg",
             description: "Solid Member",
             joinDate: "2000",
@@ -196,4 +196,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize members
     loadMembers();
+
 });
