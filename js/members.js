@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
             role: "officer",
             roleDisplay: "Coach",
             image: "images/rude.jpg",
-            description: "Solid Member",
+            description: "Solid Coach",
             joinDate: "2000",
             specialization: "Defense & Support",
             stats: {
@@ -198,4 +198,5 @@ document.addEventListener('DOMContentLoaded', function() {
     loadMembers();
 
 });
+
 
