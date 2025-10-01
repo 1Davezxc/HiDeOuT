@@ -72,9 +72,9 @@ document.addEventListener('DOMContentLoaded', function() {
             joinDate: "2000",
             specialization: "Defense & Support",
             stats: {
-               duels: "500+",
-                winRate: "85%",
-                experience: "8 years"
+               Session: "500+",
+                winRate: "100%",
+                experience: "25 years"
             }
         },
        {
@@ -198,3 +198,4 @@ document.addEventListener('DOMContentLoaded', function() {
     loadMembers();
 
 });
+
