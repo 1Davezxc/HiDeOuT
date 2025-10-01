@@ -1,0 +1,197 @@
+/* All Members Page Styles */
+.all-members {
+    padding: 5rem 0;
+    min-height: 100vh;
+}
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.back-button:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+/* Search and Filter Controls */
+.members-controls {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.search-input {
+    flex: 1;
+    min-width: 250px;
+    padding: 1rem;
+    background: var(--gray);
+    border: 1px solid var(--dark);
+    border-radius: 5px;
+    color: var(--light);
+    font-size: 1rem;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.role-filter {
+    padding: 1rem;
+    background: var(--gray);
+    border: 1px solid var(--dark);
+    border-radius: 5px;
+    color: var(--light);
+    font-size: 1rem;
+    min-width: 150px;
+}
+
+/* Members Grid */
+.all-members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.member-card-large {
+    background: var(--gray);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.member-card-large:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.member-avatar-large {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    overflow: hidden;
+    border: 3px solid var(--primary);
+}
+
+.member-avatar-large img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-name-large {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--light);
+}
+
+.member-role-large {
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.member-desc-large {
+    color: var(--light);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.member-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--dark);
+}
+
+.member-stat {
+    text-align: center;
+}
+
+.member-stat-value {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.member-stat-label {
+    font-size: 0.8rem;
+    color: var(--light);
+    opacity: 0.8;
+}
+
+/* Role Badges */
+.role-badge {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.role-guild-master {
+    background: linear-gradient(45deg, #ffd700, #ffed4e);
+    color: #000;
+}
+
+.role-officer {
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    color: white;
+}
+
+.role-veteran {
+    background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+    color: white;
+}
+
+.role-member {
+    background: linear-gradient(45deg, #4ecdc4, #88d3ce);
+    color: white;
+}
+
+/* Loading State */
+.loading {
+    text-align: center;
+    color: var(--light);
+    font-size: 1.2rem;
+    padding: 2rem;
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .members-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .event-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
